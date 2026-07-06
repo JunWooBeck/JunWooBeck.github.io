@@ -22,9 +22,8 @@ latest_posts:
   enabled: false
 ---
 
-I am an M.S. student in Music Technology at Georgia Tech, working with
-[Dr. Alexander Lerch](https://www.alexanderlerch.com/) in the Music
-Informatics Group. My research applies machine learning and music
+I am an M.S. student in Music Technology at Georgia Tech, working in the
+Music Informatics Group. My research applies machine learning and music
 information retrieval to sound effects and music audio.
 
 Before Georgia Tech, I studied Electronic Production and Design at Berklee
@@ -38,7 +37,7 @@ arranger, and violinist.
 ## Education
 
 **M.S. in Music Technology** — Georgia Institute of Technology, Atlanta, GA
-<br>Aug 2025 – May 2027 (expected) · Music Informatics Group · Advisor: Dr. Alexander Lerch
+<br>Aug 2025 – May 2027 (expected) · Music Informatics Group
 
 **B.M. in Electronic Production and Design** — Berklee College of Music, Boston, MA
 <br>Sep 2017 – Aug 2024 · Magna cum laude · Minors in Game and Interactive Media Scoring, and Screen Scoring
