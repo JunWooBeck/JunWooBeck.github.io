@@ -70,7 +70,7 @@ body {
 hr.section-divider {
   border: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.3);
-  margin: 2rem 0;
+  margin: 3rem 0;
 }
 
 /* "view all news" link under the homepage news list */
@@ -81,5 +81,11 @@ hr.section-divider {
 
 /* Full name bold in the navbar brand on subpages */
 .navbar-brand.title {
+  font-weight: 700;
+}
+
+/* About-page section headings: smaller and bold, eunjioh.com style */
+.section-heading {
+  font-size: 1.5rem;
   font-weight: 700;
 }
