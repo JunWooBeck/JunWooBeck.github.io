@@ -42,6 +42,14 @@ and string arranger; I am also a classically trained violinist. This
 combination of musicianship, studio practice, and computational methods
 shapes how I approach audio ML research.
 
+## education
+
+**M.S. in Music Technology** — Georgia Institute of Technology, Atlanta, GA
+<br>Aug 2025 – May 2027 (expected) · Music Informatics Group · Advisor: Dr. Alexander Lerch
+
+**B.M. in Electronic Production and Design** — Berklee College of Music, Boston, MA
+<br>Aug 2024 · Magna cum laude · Minors in Game and Interactive Media Scoring, and Screen Scoring
+
 My full CV is available [as a PDF](/assets/pdf/JunWooBeck_CV.pdf).
 
 <!-- TODO: 음악 포트폴리오 사이트 완성 후 여기에 링크 한 줄 추가 -->
