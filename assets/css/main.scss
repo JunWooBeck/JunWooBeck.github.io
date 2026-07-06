@@ -42,3 +42,33 @@
   --global-hover-color: #3d6f9f;
   --global-code-bg-color: rgba(61, 111, 159, 0.05);
 }
+
+/* Roomier reading: the theme default (1.5) feels cramped */
+body {
+  line-height: 1.75;
+}
+
+/* Minimal social icons inline with the name on the about page */
+.post-title .header-social {
+  font-size: 1.15rem;
+  margin-left: 0.5rem;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.post-title .header-social a {
+  color: var(--global-text-color-light);
+  margin-left: 0.4rem;
+  text-decoration: none;
+}
+
+.post-title .header-social a:hover {
+  color: var(--global-theme-color);
+}
+
+/* Dividers between the homepage sections (bio / Education / News) */
+hr.section-divider {
+  border: 0;
+  border-top: 1px solid var(--global-divider-color);
+  margin: 2rem 0;
+}
