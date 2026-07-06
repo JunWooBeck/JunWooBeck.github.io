@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: >
   M.S. student in Music Technology · Music Informatics Group, Georgia Tech

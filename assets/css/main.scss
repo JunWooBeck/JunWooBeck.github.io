@@ -69,6 +69,12 @@ body {
 /* Dividers between the homepage sections (bio / Education / News) */
 hr.section-divider {
   border: 0;
-  border-top: 1px solid var(--global-divider-color);
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
   margin: 2rem 0;
+}
+
+/* "view all news" link under the homepage news list */
+.news-more {
+  margin-top: 0.25rem;
+  font-size: 0.9rem;
 }
