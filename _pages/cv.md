@@ -1,14 +1,18 @@
 ---
 layout: page
 permalink: /cv/
-title: cv
+title: CV
 nav: true
-nav_order: 4
-description: My full curriculum vitae as a PDF.
+nav_order: 5
+description:
 ---
 
-My full CV is available as a PDF:
+<a href="{{ '/assets/pdf/JunWooBeck_CV.pdf' | relative_url }}" class="btn btn-outline-primary" target="_blank" rel="noopener">Download PDF</a>
 
-<a href="{{ '/assets/pdf/JunWooBeck_CV.pdf' | relative_url }}" class="btn btn-primary" target="_blank" rel="noopener">Download CV (PDF)</a>
-
-<!-- TODO: export the latest CV from the docx→PDF pipeline and upload it as assets/pdf/JunWooBeck_CV.pdf -->
+<iframe
+  src="{{ '/assets/pdf/JunWooBeck_CV.pdf' | relative_url }}"
+  title="Jun Woo Beck — CV"
+  width="100%"
+  height="1000"
+  style="border: 1px solid var(--global-divider-color); border-radius: 4px; margin-top: 0.5rem;"
+></iframe>

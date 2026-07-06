@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Speaker-Panel Acoustic Evaluation & Digital EQ
-description: Industry collaboration with Textron (Spring 2026)
-importance: 3
+title: Textron Panel Speaker Project
+description: Acoustic evaluation and digital EQ — industry collaboration with Textron (Spring 2026)
+importance: 2
 category: research
 ---
 

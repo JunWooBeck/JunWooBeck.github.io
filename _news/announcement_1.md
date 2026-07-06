@@ -5,5 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I joined the Music Informatics Group at Georgia Tech as an M.S. student in
-Music Technology, advised by Dr. Alexander Lerch.
+Joined the Music Informatics Group at Georgia Tech as an M.S. student in Music Technology 🎓

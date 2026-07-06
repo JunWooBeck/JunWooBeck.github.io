@@ -15,6 +15,10 @@ tools, and converted datasets are open-sourced across four public
 repositories.
 
 First-author paper at DAFx 2026 (with Alexander Lerch; oral presentation,
-September 2026). [Code](https://github.com/JunWooBeck)
+September 2026).
 
-<!-- TODO: Code 링크를 메인 레포 URL로 교체 -->
+**Code & data**
+
+- Unified corpus: [envsound-ucs](https://github.com/JunWooBeck/envsound-ucs)
+- Conversion pipeline & tools: [ucs-sfx-tools](https://github.com/JunWooBeck/ucs-sfx-tools)
+- Per-dataset UCS metadata & splits: [fsd50k-ucs](https://github.com/JunWooBeck/fsd50k-ucs) · [audioset-ucs](https://github.com/JunWooBeck/audioset-ucs) · [esc50-ucs](https://github.com/JunWooBeck/esc50-ucs)
