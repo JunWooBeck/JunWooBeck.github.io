@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2026-05-15 09:00:00-0400
+date: 2026-01-15 09:00:00-0500
 inline: true
 related_posts: false
 ---
 
-_The Singing Skin_ (led by Eun Ji Oh) is in press at ICMC 2026, Hamburg 🎶
+Awarded a $2,000 Seed Grant by the **Georgia Tech Center for Music Technology**.
