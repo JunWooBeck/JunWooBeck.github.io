@@ -20,5 +20,5 @@ overrides:
     gem_version: 1.0.11
     upstream_path: assets/css/main.scss
     upstream_sha256: 437c6c911c596391413e435dc0ea7095e682e85c572c1fd3fff69f9597455b3e
-    local_sha256: 3ad2dea9f84ce8bc91974c8823bf972a680b210d70ce47c6dc8879115ebe88ca
+    local_sha256: 1829831cacf949d10170b97242a8a65a63a8a1121ba56a57d985abecd192f1c3
     acknowledged_at: '2026-07-06'
