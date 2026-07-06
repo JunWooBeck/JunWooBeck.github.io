@@ -35,6 +35,7 @@ arranger, and violinist.
 <hr class="section-divider">
 
 ## Education
+{: .section-heading}
 
 **M.S. in Music Technology** — Georgia Institute of Technology, Atlanta, GA
 <br>Aug 2025 – May 2027 (expected) · Music Informatics Group
