@@ -1,12 +1,14 @@
 ---
-layout: cv
+layout: page
 permalink: /cv/
-title: CV
+title: cv
 nav: true
-nav_order: 5
-cv_pdf: /assets/pdf/example_pdf.pdf # you can also use external links here
-cv_format: rendercv # options: rendercv, jsonresume
-description: This is a description of the page. You can modify it in '_pages/cv.md'. You can also change or remove the top pdf download button.
-toc:
-  sidebar: left
+nav_order: 4
+description: My full curriculum vitae as a PDF.
 ---
+
+My full CV is available as a PDF:
+
+<a href="{{ '/assets/pdf/JunWooBeck_CV.pdf' | relative_url }}" class="btn btn-primary" target="_blank" rel="noopener">Download CV (PDF)</a>
+
+<!-- TODO: export the latest CV from the docx→PDF pipeline and upload it as assets/pdf/JunWooBeck_CV.pdf -->
