@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2026-06-15 09:00:00-0400
+date: 2026-04-15 09:00:00-0400
 inline: true
 related_posts: false
 ---
 
-First-author paper accepted to DAFx 2026 for an oral presentation in Boston 🎤
+Completed an industry collaboration with **Textron** on speaker-panel acoustic evaluation and digital EQ tuning.
