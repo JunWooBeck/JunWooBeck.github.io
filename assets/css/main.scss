@@ -89,3 +89,9 @@ hr.section-divider {
   font-size: 1.5rem;
   font-weight: 700;
 }
+
+/* Profile photo floats before the header (see _layouts/about.liquid);
+   give it a little breathing room from the wrapped text */
+.post .profile.float-right {
+  margin-bottom: 0.5rem;
+}

@@ -28,7 +28,7 @@ working in the Music Informatics Group. My research interests include
 effects and music audio, **multimodal learning** across audio, video, and
 language, and audio dataset construction.
 
-These days, I am working on my master's thesis — **multimodal music
+I am working on my master's thesis — **multimodal music
 recommendation** for video — and on interactive performances
 that connect an audience in real time using their own biosignals.
 
