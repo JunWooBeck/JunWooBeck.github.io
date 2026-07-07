@@ -39,8 +39,10 @@ that connect an audience in real time using their own biosignals.
 ## Education
 {: .section-heading}
 
-**M.S. in Music Technology** — Georgia Institute of Technology, Atlanta, GA
-<br>Aug 2025 – May 2027 (expected) · Music Informatics Group
+2025 – Present
+<br>**Georgia Institute of Technology**, Atlanta, GA, USA
+<br>M.S. in Music Technology
 
-**B.M. in Electronic Production and Design** — Berklee College of Music, Boston, MA
-<br>Sep 2017 – Aug 2024 · Magna cum laude · Minors in Game and Interactive Media Scoring, and Screen Scoring
+2017 – 2024
+<br>**Berklee College of Music**, Boston, MA, USA
+<br>B.M. in Electronic Production and Design (Minors in Game and Interactive Media Scoring; Screen Scoring)
