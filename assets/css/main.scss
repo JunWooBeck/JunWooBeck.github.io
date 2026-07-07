@@ -95,3 +95,14 @@ hr.section-divider {
 .post .profile.float-right {
   margin-bottom: 0.5rem;
 }
+
+/* Publication titles: clickable but not blue — inherit text color,
+   show the accent only on hover */
+.publications .title a {
+  color: var(--global-text-color);
+}
+
+.publications .title a:hover {
+  color: var(--global-theme-color);
+  text-decoration: underline;
+}
