@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-**Textron** — Completed an industry collaboration project.
+**Textron** — Completed a semester-long industry collaboration project (Spring 2026).
