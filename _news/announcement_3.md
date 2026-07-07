@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Awarded a $2,000 Seed Grant by the **Georgia Tech Center for Music Technology**.
+**GTCMT** — Awarded a $2,000 Seed Grant by the Georgia Tech Center for Music Technology.

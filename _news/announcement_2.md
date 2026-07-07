@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Joined the **Music Informatics Group** at Georgia Tech as an M.S. student in Music Technology.
+**Georgia Tech** — Joined the Music Informatics Group as an M.S. student in Music Technology.

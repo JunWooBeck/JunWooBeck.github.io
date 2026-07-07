@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Completed an industry collaboration with **Textron** on speaker-panel acoustic evaluation and digital EQ tuning.
+**Textron** — Completed an industry collaboration on speaker-panel acoustic evaluation and digital EQ.

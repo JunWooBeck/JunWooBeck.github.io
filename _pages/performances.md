@@ -5,7 +5,7 @@ permalink: /performances/
 description:
 nav: true
 nav_order: 4
-display_categories: [performance]
+display_categories: [Performance]
 horizontal: false
 ---
 

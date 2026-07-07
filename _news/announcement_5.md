@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Bio Sing-Along premiered at **PRISM Pt. 1: Sound Through New Lens**, Georgia Tech Center for Music Technology.
+**PRISM Pt. 1: Sound Through New Lens** — Bio Sing-Along premiered at the Georgia Tech Center for Music Technology.

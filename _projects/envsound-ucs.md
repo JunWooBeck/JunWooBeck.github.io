@@ -3,7 +3,7 @@ layout: page
 title: EnvSound-UCS
 description: Unifying environmental sound-effects datasets under the Universal Category System (DAFx 2026)
 importance: 1
-category: research
+category: Research
 ---
 
 A rule-based tag-to-UCS conversion framework that unifies environmental

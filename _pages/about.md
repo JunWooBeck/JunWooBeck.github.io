@@ -22,13 +22,15 @@ latest_posts:
   enabled: false
 ---
 
-I am an M.S. student in Music Technology at Georgia Tech, working in the
-Music Informatics Group. My research applies machine learning and music
-information retrieval to sound effects and music audio.
+I am a second-year Master's student in Music Technology at Georgia Tech,
+working in the Music Informatics Group. My research interests include
+**machine learning and music information retrieval (MIR)** for sound
+effects and music audio, **multimodal learning** across audio, video, and
+language, and audio dataset construction.
 
-Before Georgia Tech, I studied Electronic Production and Design at Berklee
-College of Music and worked in Seoul as a recording/mixing engineer, string
-arranger, and violinist.
+These days, I am working on my master's thesis — **multimodal music
+recommendation** for video — and on [interactive performances](/performances/)
+that connect an audience in real time using their own biosignals.
 
 <!-- TODO: 음악 포트폴리오 사이트 완성 후 여기에 링크 한 줄 추가 -->
 

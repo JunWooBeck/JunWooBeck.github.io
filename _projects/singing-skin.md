@@ -3,7 +3,7 @@ layout: page
 title: The Singing Skin
 description: Audience-centered biofeedback system for musical interaction (ICMC 2026)
 importance: 3
-category: research
+category: Research
 ---
 
 An audience-centered biofeedback system that translates real-time galvanic
