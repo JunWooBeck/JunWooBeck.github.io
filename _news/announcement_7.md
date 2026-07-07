@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper on sound-effects dataset unification was accepted to **DAFx 2026**, Boston, for an oral presentation.
+**DAFx 2026** — Paper accepted for an oral presentation.

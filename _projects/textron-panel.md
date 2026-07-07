@@ -3,7 +3,7 @@ layout: page
 title: Textron Panel Speaker Project
 description: Acoustic evaluation and digital EQ — industry collaboration with Textron (Spring 2026)
 importance: 2
-category: research
+category: Research
 ---
 
 Conducted controlled acoustic measurements (THD, SINAD, frequency response)

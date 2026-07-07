@@ -4,7 +4,7 @@ title: Bio Sing-Along
 description: Turning listeners' biosignals into a live musical dialogue with the performer
 img: assets/img/bio-sing-along.png
 importance: 1
-category: performance
+category: Performance
 ---
 
 What if your body could sing back? Bio Sing-Along converts galvanic skin

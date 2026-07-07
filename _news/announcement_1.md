@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Graduated from **Berklee College of Music** with a B.M. in Electronic Production and Design, magna cum laude.
+**Berklee College of Music** — Graduated with a B.M. in Electronic Production and Design, magna cum laude.
