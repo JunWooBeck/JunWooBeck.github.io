@@ -168,11 +168,11 @@ hr.section-divider { border: 0; border-top: 1px solid var(--hairline); margin: 2
 
 /* ---- 7. Projects / Performances cards -------------------- */
 .projects .card {
-  background: transparent; border: 0; border-top: 1px solid var(--hairline);
+  background: transparent; border: 0;
   border-radius: 0; box-shadow: none; padding-top: 1.3rem;
-  transition: transform .5s var(--ease), border-color .5s;
+  transition: transform .5s var(--ease);
 }
-.projects .card:hover { transform: translateY(-4px); border-top-color: var(--teal); box-shadow: none; }
+.projects .card:hover { transform: translateY(-4px); box-shadow: none; }
 .projects .card .card-title { font-family: var(--fd); font-weight: 400; color: var(--ink); }
 .projects .card .card-text  { font-family: var(--fd); color: var(--graphite); }
 .projects .card img { border-radius: 0; }
