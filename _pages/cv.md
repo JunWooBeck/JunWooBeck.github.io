@@ -7,10 +7,10 @@ nav_order: 6
 description:
 ---
 
-<a href="{{ '/assets/pdf/JunWooBeck_CV.pdf' | relative_url }}" class="btn btn-outline-primary" target="_blank" rel="noopener">Download PDF</a>
+<a href="{{ '/assets/pdf/JunWooBeck_CV.pdf' | relative_url | bust_file_cache }}" class="btn btn-outline-primary" target="_blank" rel="noopener">Download PDF</a>
 
 <iframe
-  src="{{ '/assets/pdf/JunWooBeck_CV.pdf' | relative_url }}"
+  src="{{ '/assets/pdf/JunWooBeck_CV.pdf' | relative_url | bust_file_cache }}"
   title="Jun Woo Beck — CV"
   width="100%"
   height="1000"
