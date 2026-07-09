@@ -3,22 +3,18 @@
 ---
 @charset "utf-8";
 
-/* Built-in Sass modules you’ll likely use across partials */
+/* Built-in Sass modules you'll likely use across partials */
 @use "sass:math";
 @use "sass:string";
 
-/* Configure your design tokens BEFORE loading any of your partials.
-   Make sure `_sass/_variables.scss` declares `$max-content-width: 72rem !default;` */
+/* Configure your design tokens BEFORE loading any of your partials. */
 @use "variables" with (
   $max-content-width: {{ site.max_width | default:  "930px" }}
 );
 
-/* Your project partials — convert these files to `@use "variables";`
-   (or `@use "variables" as *;`) inside each file and qualify variables if needed. */
+/* Your project partials */
 @use "themes";
 @use "layout";
-
-// Core styles organized by usage
 @use "typography";
 @use "navbar";
 @use "footer";
@@ -26,83 +22,179 @@
 @use "publications";
 @use "components";
 @use "utilities";
-
-// Other specialized styles
 @use "tabs";
 @use "teachings";
 @use "typograms";
 
-/* ---------------------------------------------------------------------------
- * Site customization (junwoobeck.github.io): muted-blue accent instead of the
- * theme's default purple. Plain CSS custom-property overrides — they win by
- * cascade order, so no gem Sass partials need to be shadowed.
- * ------------------------------------------------------------------------- */
+/* ============================================================
+   MUSIC-PORTFOLIO RESKIN — Jun Woo Beck
+   Applies the junwoobeck.github.io/music design language to the
+   al-folio research site. Pure CSS-variable + selector overrides;
+   no gem partials are shadowed, so `bundle update` stays clean and
+   all content keeps living in _news / _projects / _bibliography.
+
+   Fonts load via _config.yml (Hanken Grotesk / Geist Mono / Cormorant).
+   Selectors were verified against al-folio v1's rendered DOM.
+   ============================================================ */
+
+/* ---- 1. Design tokens ------------------------------------- */
 :root {
-  --global-theme-color: #3d6f9f;
-  --global-hover-color: #3d6f9f;
-  --global-code-bg-color: rgba(61, 111, 159, 0.05);
+  --paper:#FBFBF9; --ink:#141416; --graphite:#2E2E33; --slate:#46464E;
+  --muted:#71717A; --faint:#9A9AA1; --surface:#E9E9E6;
+  --teal:#0F87A8; --teal-ink:#0E5468; --teal-wash:#E4EDF0;
+  --hairline:rgba(20,20,25,.12); --chip-border:rgba(20,20,22,.16); --chip-ink:#5A5A62;
+  --fd:'Hanken Grotesk',system-ui,sans-serif;   /* display + body */
+  --fm:'Geist Mono',ui-monospace,monospace;      /* labels / nav / meta */
+  --fs:'Cormorant',Georgia,serif;                /* publication venue italic only */
+  --ease:cubic-bezier(.22,.61,.21,1);
+
+  /* Map onto al-folio's global theme variables */
+  --global-bg-color: var(--paper);
+  --global-text-color: var(--graphite);
+  --global-text-color-light: var(--muted);
+  --global-theme-color: var(--teal);
+  --global-hover-color: var(--teal);
+  --global-divider-color: var(--hairline);
+  --global-card-bg-color: #ffffff;
+  --global-code-bg-color: rgba(15,135,168,.05);
 }
 
-/* Roomier reading: the theme default (1.5) feels cramped */
+/* ---- 2. Typography base ----------------------------------- */
 body {
+  font-family: var(--fd);
+  font-weight: 400;
   line-height: 1.75;
+  color: var(--graphite);
+  background: var(--paper);
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, h4, h5, h6,
+.post-title, .post-title h1, .category {
+  font-family: var(--fd);
+  font-weight: 300;
+  letter-spacing: -.015em;
+  color: var(--ink);
+}
+a { color: var(--ink); text-decoration: none; }
+a:hover { color: var(--teal); }
+::selection { background: var(--teal-wash); color: var(--teal-ink); }
+
+/* ---- 3. About: name + inline social icons ---------------- */
+.post-title { font-weight: 300; }
+/* about.liquid wraps the name in .font-weight-bold — the design wants Hanken 300 */
+.post-title .font-weight-bold { font-weight: 300; }
+.post-title .header-social { font-size: 1rem; margin-left: .6rem; white-space: nowrap; vertical-align: middle; }
+.post-title .header-social a { color: var(--muted); margin-left: .5rem; text-decoration: none; }
+.post-title .header-social a:hover { color: var(--teal); }
+
+/* subtitle under the name — same font as the bio; one line on desktop */
+.post-header .desc {
+  font-family: var(--fd);
+  color: var(--graphite);
+  font-size: 1rem;
+}
+@media (min-width: 576px) {
+  .post-header .desc { white-space: nowrap; }
 }
 
-/* Minimal social icons inline with the name on the about page */
-.post-title .header-social {
-  font-size: 1.15rem;
-  margin-left: 0.5rem;
-  white-space: nowrap;
-  vertical-align: middle;
+/* profile photo — a touch larger, subtle radius (al-folio floats it right) */
+.post .profile img { border-radius: 4px; }
+.post .profile.float-right { max-width: 260px; margin-bottom: .5rem; }
+/* on mobile, stack the photo above the name instead of floating it
+   (otherwise the name wraps awkwardly around the float) */
+@media (max-width: 575.98px) {
+  .post .profile.float-right { float: none; max-width: 220px; margin: 0 0 1.5rem; }
 }
 
-.post-title .header-social a {
-  color: var(--global-text-color-light);
-  margin-left: 0.4rem;
-  text-decoration: none;
-}
-
-.post-title .header-social a:hover {
-  color: var(--global-theme-color);
-}
-
-/* Dividers between the homepage sections (bio / Education / News) */
-hr.section-divider {
-  border: 0;
-  border-top: 2px solid rgba(0, 0, 0, 0.5);
-  margin: 3rem 0;
-}
-
-/* "view all news" link under the homepage news list */
-.news-more {
-  margin-top: 0.25rem;
-  font-size: 0.9rem;
-}
-
-/* Full name bold in the navbar brand on subpages */
-.navbar-brand.title {
-  font-weight: 700;
-}
-
-/* About-page section headings: smaller and bold, eunjioh.com style */
+/* ---- 4. Section kickers (mono, uppercase, teal) ---------- */
+/* About page headings authored as:  ## Education {: .section-heading} */
 .section-heading {
-  font-size: 1.5rem;
-  font-weight: 700;
+  font-family: var(--fm);
+  font-size: .7rem;
+  font-weight: 600;
+  letter-spacing: .28em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-top: 2.6rem;
+}
+hr.section-divider { border: 0; border-top: 1px solid var(--hairline); margin: 2.75rem 0; }
+
+/* ---- 5. Navbar → mono tabs ------------------------------- */
+.navbar {
+  background: rgba(251,251,249,.86);
+  backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(20,20,25,.07);
+}
+.navbar-brand.title { font-family: var(--fd); font-weight: 500; letter-spacing: .01em; color: var(--ink); }
+.navbar-nav .nav-item .nav-link {
+  font-family: var(--fm);
+  font-size: .68rem;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--muted);
+  border-radius: 999px;
+  padding: .5rem .8rem;
+  transition: background .3s, color .3s;
+}
+.navbar-nav .nav-item .nav-link:hover,
+.navbar-nav .nav-item.active .nav-link {
+  background: var(--teal-wash);
+  color: var(--teal-ink);
+}
+/* accent style for the external "MUSIC ↗" link */
+.navbar-nav .nav-link.nav-music { color: var(--teal); font-weight: 500; }
+.navbar-nav .nav-link.nav-music:hover { background: var(--teal-wash); color: var(--teal-ink); }
+
+/* ---- 6. Publications ------------------------------------- */
+.publications h2.bibliography { font-family: var(--fd); font-weight: 300; color: var(--faint); }
+.publications ol.bibliography li .title { font-family: var(--fd); font-weight: 400; color: var(--ink); }
+.publications ol.bibliography li .author { font-family: var(--fd); color: var(--graphite); }
+/* al-folio wraps the site owner's name in span.highlight */
+.publications ol.bibliography li .author .highlight {
+  font-weight: 600; color: var(--ink); font-style: normal;
+}
+.publications ol.bibliography li .periodical { font-family: var(--fs); font-style: italic; color: var(--slate); }
+.publications .title a { color: var(--ink); }
+.publications .title a:hover { color: var(--teal); text-decoration: underline; }
+/* link buttons (arXiv / Bib / PDF / Code) → mono outline chips */
+.publications a.btn {
+  font-family: var(--fm); font-size: .6rem; letter-spacing: .16em; text-transform: uppercase;
+  color: var(--chip-ink); background: transparent;
+  border: 1px solid var(--chip-border); border-radius: 3px; padding: .3rem .55rem;
+}
+.publications a.btn:hover {
+  background: var(--teal-wash); color: var(--teal-ink); border-color: transparent;
 }
 
-/* Profile photo floats before the header (see _layouts/about.liquid);
-   give it a little breathing room from the wrapped text */
-.post .profile.float-right {
-  margin-bottom: 0.5rem;
+/* ---- 7. Projects / Performances cards -------------------- */
+.projects .card {
+  background: transparent; border: 0; border-top: 1px solid var(--hairline);
+  border-radius: 0; box-shadow: none; padding-top: 1.3rem;
+  transition: transform .5s var(--ease), border-color .5s;
+}
+.projects .card:hover { transform: translateY(-4px); border-top-color: var(--teal); box-shadow: none; }
+.projects .card .card-title { font-family: var(--fd); font-weight: 400; color: var(--ink); }
+.projects .card .card-text  { font-family: var(--fd); color: var(--graphite); }
+.projects .card img { border-radius: 0; }
+.projects h2.category {
+  font-family: var(--fm); font-size: .72rem; letter-spacing: .2em;
+  text-transform: uppercase; color: var(--muted); font-weight: 400;
 }
 
-/* Publication titles: clickable but not blue — inherit text color,
-   show the accent only on hover */
-.publications .title a {
-  color: var(--global-text-color);
-}
+/* ---- 8. Home / full news list (al-folio renders a table) - */
+.news table td, .news table th { font-family: var(--fd); border-color: var(--hairline); }
+.news table th { font-family: var(--fm); font-size: .66rem; letter-spacing: .1em; color: var(--muted); font-weight: 400; vertical-align: top; }
+.news table tr + tr td, .news table tr + tr th { border-top: 1px solid var(--hairline); }
+.news-more, .news-more a { font-family: var(--fm); font-size: .66rem; letter-spacing: .18em; text-transform: uppercase; color: var(--teal); }
 
-.publications .title a:hover {
-  color: var(--global-theme-color);
-  text-decoration: underline;
+/* ---- 9. Footer ------------------------------------------- */
+footer .container { font-family: var(--fm); font-size: .62rem; letter-spacing: .06em; color: var(--faint); }
+footer .container a { color: var(--faint); }
+footer .container a:hover { color: var(--teal); }
+
+/* ---- 10. Buttons / pills (CV "Download PDF", etc.) ------- */
+.btn-outline-primary {
+  font-family: var(--fm); font-size: .66rem; letter-spacing: .18em; text-transform: uppercase;
+  color: var(--slate); border-color: var(--chip-border); border-radius: 999px;
 }
+.btn-outline-primary:hover { background: var(--teal-wash); color: var(--teal-ink); border-color: transparent; }
