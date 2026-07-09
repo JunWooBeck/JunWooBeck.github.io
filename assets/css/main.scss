@@ -125,7 +125,11 @@ hr.section-divider { border: 0; border-top: 1px solid var(--hairline); margin: 2
   backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(20,20,25,.07);
 }
-.navbar-brand.title { font-family: var(--fd); font-weight: 500; letter-spacing: .01em; color: var(--ink); }
+/* whole brand at Hanken 500 — the inner .font-weight-bold span (first name)
+   would otherwise render a synthetic 700 (only 300/400/500 are loaded),
+   making "Beck" look lighter than "Jun Woo" */
+.navbar-brand.title,
+.navbar-brand.title .font-weight-bold { font-family: var(--fd); font-weight: 500; letter-spacing: .01em; color: var(--ink); }
 .navbar-nav .nav-item .nav-link {
   font-family: var(--fm);
   font-size: .68rem;
