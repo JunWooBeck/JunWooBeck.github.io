@@ -1,7 +1,7 @@
 ---
 layout: page
 title: EnvSound-UCS
-description: Unifying environmental sound-effects datasets under the Universal Category System (DAFx 2026)
+description: Sound Effects Dataset Unification With the Universal Category System (DAFx 2026)
 importance: 1
 category: Research
 ---
