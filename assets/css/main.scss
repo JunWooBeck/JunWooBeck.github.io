@@ -198,3 +198,28 @@ footer .container a:hover { color: var(--teal); }
   color: var(--slate); border-color: var(--chip-border); border-radius: 999px;
 }
 .btn-outline-primary:hover { background: var(--teal-wash); color: var(--teal-ink); border-color: transparent; }
+
+/* ---- 11. Page-transition cross-fade ---------------------- */
+/* al-folio is multi-page (each nav click loads a new document), so the
+   mock's single-page cross-fade doesn't carry over natively. The CSS
+   Cross-Document View Transitions API restores it: a soft cross-fade of
+   the content on same-origin navigation. Progressive enhancement —
+   browsers without support just navigate instantly. */
+@view-transition { navigation: auto; }
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: .34s;
+  animation-timing-function: cubic-bezier(.22,.61,.21,1);
+}
+
+/* keep the fixed navbar / footer stable across the transition instead of
+   cross-fading them with the page body (identical on every page) */
+#navbar { view-transition-name: site-nav; }
+footer.fixed-bottom { view-transition-name: site-footer; }
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) { animation: none !important; }
+}
