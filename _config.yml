@@ -10,7 +10,7 @@ contact_note:
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Jun Woo Beck — M.S. student in Music Technology at Georgia Tech
   (Music Informatics Group). Audio–visual multimodal learning, music
-  information retrieval, video–music understanding for film scoring, and
+  information retrieval, video–music understanding, and
   machine learning for sound effects and music audio.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.

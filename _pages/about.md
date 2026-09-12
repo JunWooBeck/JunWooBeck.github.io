@@ -28,9 +28,8 @@ learning, music information retrieval (MIR), video-conditioned music understandi
 and music cue placement in film, and machine learning for sound effects and music
 audio.
 
-My current research explores multimodal video–music understanding for film scoring,
-alongside interactive performances that connect an audience in real time using their
-own biosignals.
+My current research explores multimodal video–music understanding across a range of
+visual media.
 
 <hr class="section-divider">
 
