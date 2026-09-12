@@ -9,6 +9,5 @@ category: Research
 An audience-centered biofeedback system that translates real-time galvanic
 skin response (GSR) signals from listeners into interactive musical output.
 I designed and implemented the full audio system. Led by Eun Ji Oh;
-in press at ICMC 2026 (Hamburg) and performed in a live concert in May 2026.
-
-<!-- TODO: Singing Skin 라이브 공연(May 2026) 표기 사실 확인 — 아니면 해당 구절 삭제 -->
+published in the Proceedings of the 51st International Computer Music Conference
+(ICMC 2026, Hamburg) and performed in a live concert in May 2026.

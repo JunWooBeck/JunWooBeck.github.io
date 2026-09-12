@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-**DAFx 2026** — Sound Effects Dataset Unification with the Universal Category System accepted.
+**DAFx 2026** — Sound Effects Dataset Unification With the Universal Category System accepted.

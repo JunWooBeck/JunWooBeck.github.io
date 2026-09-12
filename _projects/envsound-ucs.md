@@ -14,8 +14,9 @@ validated with audio-classification benchmarks. The conversion pipeline,
 tools, and converted datasets are open-sourced across four public
 repositories.
 
-First-author paper at DAFx 2026 (with Alexander Lerch; poster presentation,
-September 2026).
+First-author paper with Alexander Lerch, published in the Proceedings of the 29th
+International Conference on Digital Audio Effects (DAFx 2026, Cambridge, MA) and
+presented as a poster in September 2026.
 
 **Code & data**
 

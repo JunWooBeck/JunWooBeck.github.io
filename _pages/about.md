@@ -22,17 +22,15 @@ latest_posts:
   enabled: false
 ---
 
-I am a second-year Master's student in Music Technology at Georgia Tech,
-working in the Music Informatics Group. My research interests include
-machine learning and music information retrieval (MIR) for sound
-effects and music audio, multimodal learning across audio, video, and
-language, and audio dataset construction.
+I am a second-year Master's student in Music Technology at Georgia Tech, working in
+the Music Informatics Group. My research interests include audio–visual multimodal
+learning, music information retrieval (MIR), video-conditioned music understanding
+and music cue placement in film, and machine learning for sound effects and music
+audio.
 
-I am working on my master's thesis — multimodal music
-recommendation for video — and on interactive performances
-that connect an audience in real time using their own biosignals.
-
-<!-- TODO: 음악 포트폴리오 사이트 완성 후 여기에 링크 한 줄 추가 -->
+My current research explores multimodal video–music understanding for film scoring,
+alongside interactive performances that connect an audience in real time using their
+own biosignals.
 
 <hr class="section-divider">
 
